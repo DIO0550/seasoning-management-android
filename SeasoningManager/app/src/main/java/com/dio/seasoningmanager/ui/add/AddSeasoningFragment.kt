@@ -1,4 +1,4 @@
-package com.dio.seasoningmanager.ui.home
+package com.dio.seasoningmanager.ui.add
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.dio.seasoningmanager.R
 
-class SeasoningListFragment : Fragment() {
+class AddSeasoningFragment : Fragment() {
 
-    private lateinit var seasoningListViewModel: SeasoningListViewModel
+    private lateinit var addSeasoningViewModel: AddSeasoningViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        seasoningListViewModel =
-                ViewModelProvider(this).get(SeasoningListViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        seasoningListViewModel.text.observe(viewLifecycleOwner, Observer {
+        addSeasoningViewModel =
+                ViewModelProvider(this).get(AddSeasoningViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
+        val textView: TextView = root.findViewById(R.id.text_notifications)
+        addSeasoningViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

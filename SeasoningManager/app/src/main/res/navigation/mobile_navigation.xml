@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.dio.seasoningmanager.ui.home.SeasoningListFragment"
+        android:name="com.dio.seasoningmanager.ui.list.SeasoningListFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.dio.seasoningmanager.ui.notifications.NotificationsFragment"
+        android:name="com.dio.seasoningmanager.ui.add.AddSeasoningFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

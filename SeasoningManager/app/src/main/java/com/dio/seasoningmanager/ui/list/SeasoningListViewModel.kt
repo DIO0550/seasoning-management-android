@@ -1,4 +1,4 @@
-package com.dio.seasoningmanager.ui.home
+package com.dio.seasoningmanager.ui.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
