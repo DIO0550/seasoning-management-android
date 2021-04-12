@@ -21,10 +21,8 @@ class SeasoningListFragment : Fragment() {
     ): View? {
         seasoningListViewModel =
                 ViewModelProvider(this).get(SeasoningListViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
+        val root = inflater.inflate(R.layout.fragment_sesoning_list, container, false)
         seasoningListViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
         })
         return root
     }
