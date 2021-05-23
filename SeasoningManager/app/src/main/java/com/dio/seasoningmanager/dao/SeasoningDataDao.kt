@@ -15,6 +15,6 @@ interface SeasoningDataDao {
     @Update
     fun update(seasoningData: SeasoningData)
 
-    @Query("SELECT * FROM seasoning_data_table where id = :id")
-    fun getSeasoningData(id: Int): SeasoningData;
+    @Query("SELECT * FROM seasoning_data_table " + "WHERE uid = :uid")
+    fun getSeasoningData(uid: Int): SeasoningData;
 }

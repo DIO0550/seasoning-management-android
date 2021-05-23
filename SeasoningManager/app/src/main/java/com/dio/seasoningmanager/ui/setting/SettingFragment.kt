@@ -1,4 +1,4 @@
-package com.dio.seasoningmanager.ui.list
+package com.dio.seasoningmanager.ui.setting
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,18 +10,18 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.dio.seasoningmanager.R
 
-class SeasoningListFragment : Fragment() {
+class SettingFragment : Fragment() {
 
-    private lateinit var seasoningListViewModel: SeasoningListViewModel
+    private lateinit var settingViewModel: SettingViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        seasoningListViewModel =
-                ViewModelProvider(this).get(SeasoningListViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_sesoning_list, container, false)
+        settingViewModel =
+                ViewModelProvider(this).get(SettingViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_setting, container, false)
         return root
     }
 }
