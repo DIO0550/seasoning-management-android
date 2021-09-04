@@ -12,6 +12,7 @@ import java.util.*
 data class SeasoningData(
     @PrimaryKey(autoGenerate = true) val uid: Int,
     @ColumnInfo(name = "name") val name: String?,
-    @ColumnInfo(name = "expiration_date") val expirationDate: Date,
-    @ColumnInfo(name = "image", typeAffinity = ColumnInfo.BLOB)  val image: ByteArray
+    @ColumnInfo(name = "expiration_date") val expirationDate: Date?,
+    @ColumnInfo(name = "type") val type: String?,
+    @ColumnInfo(name = "image", typeAffinity = ColumnInfo.BLOB)  val image: ByteArray?
 )
